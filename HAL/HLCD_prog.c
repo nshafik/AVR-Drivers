@@ -50,3 +50,17 @@ void HLCD_VidInit(){
 	HLCD_VidsendCommand(0b00000001) ;
 	_delay_ms(4) ;
 }
+
+void HLCD_VidGotXY(u8 A_u8X ,u8 A_u8Y  ) {
+
+
+    if (A_u8X == 1 ) {
+
+		A_u8Y+=0x40;
+	}
+
+
+    HLCD_VidSendCommand((0b10000000)+A_u8Y) ;
+
+
+}

@@ -18,7 +18,7 @@
 void HLCD_VidsendCommand(u8 A_u8Command) ;
 void HLCD_VidsendData(u8 A_u8Data) ;
 void HLCD_VidInit();
-    /*set port direction*/
+void HLCD_VidGotXY(u8 A_u8X ,u8 A_u8Y  ) ;
 
 
 
