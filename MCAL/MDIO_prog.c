@@ -72,9 +72,9 @@ void MDIO_VidSetPortDirection(u8 A_u8Port , u8 A_u8PortDir){
 	if(A_u8PortDir == INPUT){
 		switch (A_u8Port){
 			case PORT_A: DDRA = 0x00; break;
-			case PORT_B: DDRA = 0x00; break;
-			case PORT_C: DDRA = 0x00; break;
-			case PORT_D: DDRA = 0x00; break;
+			case PORT_B: DDRB = 0x00; break;
+			case PORT_C: DDRC = 0x00; break;
+			case PORT_D: DDRD = 0x00; break;
 
 		}
 	}
